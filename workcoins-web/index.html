@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WorkCoins UNI: maqueta escolar de proyectos universitarios en HTML y CSS.">
+    <title>Acceso a la plataforma | WorkCoins UNI</title>
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body class="pagina-acceso">
+    <main id="contenido">
+      <section class="tarjeta acceso" aria-labelledby="titulo-acceso">
+        <div class="titulo-acceso">
+          <a class="marca" href="index.html">WorkCoins<span>UNI</span>
+          </a>
+          <p class="mayusculas">Academic 2026 · Campus marketplace</p>
+          <h1 id="titulo-acceso">Acceso a la plataforma</h1>
+          <p class="texto-secundario">Ecosistema universitario de intercambio de talento y servicios.</p>
+        </div>
+        <p class="aviso">Demo escolar. Usa datos de prueba: este formulario solo abre el panel elegido. No valida cuentas ni envía o guarda tu correo y contraseña.</p>
+        <form action="dashboard-cliente.html" method="get">
+          <input type="radio" id="rol-cliente" name="perfil" value="cliente" checked>
+          <label for="rol-cliente">Soy cliente</label>
+          <input type="radio" id="rol-freelancer" name="perfil" value="freelancer">
+          <label for="rol-freelancer">Soy freelancer</label>
+          <div class="campos-acceso">
+            <div class="campo">
+              <label for="correo">Correo institucional de prueba</label>
+              <input id="correo" type="email" placeholder="estudiante@ejemplo.invalid" autocomplete="off" required>
+            </div>
+            <div class="campo">
+              <label for="clave">Contraseña de prueba</label>
+              <input id="clave" type="password" minlength="4" placeholder="Escribe una clave ficticia" autocomplete="off" required>
+            </div>
+          </div>
+          <div class="acciones">
+            <button class="ancho entrar-cliente" type="submit">Ingresar como cliente →</button>
+            <button class="ancho entrar-freelancer" type="submit" formaction="dashboard-freelancer.html">Ingresar como freelancer →</button>
+            <button class="secundario" type="reset">Limpiar</button>
+          </div>
+        </form>
+        <details id="ayuda-acceso">
+          <summary>¿Olvidaste tu clave o necesitas una cuenta?</summary>
+          <div>
+            <p class="texto-pequeno">Esta maqueta no tiene recuperación de contraseñas ni registro de usuarios. Para recorrerla, utiliza un correo con formato válido y una clave ficticia de al menos cuatro caracteres.</p>
+          </div>
+        </details>
+        <hr class="separador">
+        <p class="centrado texto-pequeno texto-secundario">Entorno de demostración universitaria · 2026<br>Sin autenticación, pagos ni almacenamiento.</p>
+      </section>
+    </main>
+  </body>
+</html>

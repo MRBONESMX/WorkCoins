@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WorkCoins UNI: maqueta escolar de proyectos universitarios en HTML y CSS.">
+    <title>Panel del freelancer | WorkCoins UNI</title>
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body>
+    <a class="salto" href="#contenido">Saltar al contenido</a>
+    <header class="encabezado">
+      <div class="barra">
+        <a class="marca" href="dashboard-freelancer.html" aria-label="WorkCoins, panel de freelancer">WorkCoins<span>UNI</span>
+        </a>
+        <nav class="menu" aria-label="Menú de freelancer">
+          <a href="ofertas.html">Explorar ofertas</a>
+          <a href="proyectos-freelancer.html">Mis proyectos</a>
+          <a href="coins-freelancer.html">Billetera Coins</a>
+          <a href="ganancias.html">Mis ganancias</a>
+        </nav>
+        <div class="perfil">
+          <a class="etiqueta" href="coins-freelancer.html">◉ 85 iniciales</a>
+          <details>
+            <summary>
+              <img class="avatar-cabecera" src="imagenes/avatar-sofia.jpg" alt="Foto de perfil de Sofía Valenzuela" width="28" height="28">
+              <span>Sofía Valenzuela<small>Freelancer · ejemplo</small>
+              </span>
+            </summary>
+            <p>
+              <a href="dashboard-freelancer.html">Mi panel</a>
+              <br>
+              <a href="index.html">Cambiar de rol</a>
+            </p>
+          </details>
+        </div>
+      </div>
+    </header>
+    <main id="contenido" class="contenedor">
+      <p class="aviso-demo">Maqueta escolar · Personas y datos de ejemplo. Las pantallas muestran escenarios fijos; no se guardan cambios.</p>
+      <section class="presentacion">
+        <div class="persona">
+          <img class="avatar avatar-grande" src="imagenes/avatar-sofia.jpg" alt="Foto de perfil de Sofía Valenzuela" width="58" height="58">
+          <div>
+            <span class="etiqueta azul">Matrícula activa · Perfil de ejemplo</span>
+            <h1>Panel de freelancer — Sofía Valenzuela</h1>
+            <p class="texto-secundario">Estudiante de Diseño de Interfaz · Facultad de Ingeniería y Diseño.</p>
+          </div>
+        </div>
+      </section>
+      <section class="resumen" aria-label="Resumen del freelancer">
+        <article class="tarjeta">
+          <h2>Saldo inicial en coins</h2>
+          <strong class="cifra">85 <small>coins</small>
+          </strong>
+          <p class="texto-pequeno">Ejemplo disponible antes de postular.</p>
+          <a href="coins-freelancer.html">Ver billetera →</a>
+        </article>
+        <article class="tarjeta">
+          <h2>Proyectos finalizados</h2>
+          <strong class="cifra">2 <small>proyectos</small>
+          </strong>
+          <p>Total de ejemplo: $1,050 USD</p>
+          <a href="ganancias.html">Ver ganancias →</a>
+        </article>
+        <article class="tarjeta">
+          <h2>Postulaciones activas</h2>
+          <strong class="cifra">0 <small>al inicio del recorrido</small>
+          </strong>
+          <p>Explora las convocatorias disponibles.</p>
+          <a href="ofertas.html">Explorar ofertas →</a>
+        </article>
+      </section>
+      <section aria-labelledby="recomendada">
+        <h2 id="recomendada">Oferta recomendada para tu perfil</h2>
+        <article class="tarjeta destacada">
+          <div class="etiquetas">
+            <span class="etiqueta">OFERTA-2026-01</span>
+            <span class="etiqueta">Diseño Web &amp; UI</span>
+            <span class="etiqueta naranja">Tramo 1</span>
+          </div>
+          <div class="fila">
+            <div>
+              <h2>Rediseño del Portal Web Institucional</h2>
+              <p class="texto-secundario">Cliente: Carlos Mendoza · Colegio San Javier</p>
+            </div>
+            <div class="dato">
+              <small>Presupuesto asignado</small>
+              <b class="cifra">$450 <small>USD</small>
+              </b>
+            </div>
+          </div>
+          <div class="datos">
+            <div class="dato">
+              <small>Plazo</small>
+              <b>3 semanas</b>
+            </div>
+            <div class="dato">
+              <small>Publicación</small>
+              <b>24 marzo 2026</b>
+            </div>
+            <div class="dato">
+              <small>Concurrencia</small>
+              <b>8 propuestas</b>
+            </div>
+            <div class="dato">
+              <small>Costo de postulación</small>
+              <b>10 coins</b>
+            </div>
+          </div>
+          <label for="cupo">Capacidad del tramo: 8 de 10</label>
+          <progress id="cupo" value="8" max="10">8 de 10</progress>
+          <p class="texto-pequeno texto-secundario">Consulta la oferta y prepara una propuesta técnica con una muestra de portafolio.</p>
+          <div class="acciones">
+            <a class="boton" href="oferta-freelancer.html">Ver oferta y postularme →</a>
+          </div>
+        </article>
+      </section>
+      <section>
+        <h2>Accesos rápidos</h2>
+        <div class="resumen">
+          <article class="tarjeta">
+            <h3>Catálogo de convocatorias</h3>
+            <p>Proyectos académicos y servicios de diseño.</p>
+            <a href="ofertas.html">Explorar catálogo →</a>
+          </article>
+          <article class="tarjeta">
+            <h3>Historial de ganancias</h3>
+            <p>Consulta los dos proyectos finalizados del ejemplo.</p>
+            <a href="ganancias.html">Ver historial →</a>
+          </article>
+        </div>
+      </section>
+      <section class="tarjeta">
+        <h2>Últimos proyectos calificados</h2>
+        <p>
+          <b>Diseño de interfaz para Sistema de Biblioteca Universitaria</b>
+          <br>
+          <small>Pago de ejemplo: $650 USD</small>
+        </p>
+        <hr class="separador">
+        <p>
+          <b>Manual de Identidad Digital y Componentes Web</b>
+          <br>
+          <small>Pago de ejemplo: $400 USD</small>
+        </p>
+        <a href="proyectos-freelancer.html#finalizados">Ver proyectos finalizados →</a>
+      </section>
+    </main>
+    <footer class="pie-pagina">
+      <div class="pie-interior">
+        <p>WorkCoins UNI · Proyecto escolar · 2026</p>
+        <p>Datos ficticios de demostración · <a href="index.html">Volver al acceso</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

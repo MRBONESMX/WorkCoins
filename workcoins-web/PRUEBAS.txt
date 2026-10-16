@@ -1,0 +1,39 @@
+COMPROBACIONES REALIZADAS
+
+Revision estatica de los archivos finales:
+- 20 documentos HTML analizados sin fallos en los controles implementados.
+- 302 referencias de enlaces, recursos y destinos de formularios revisadas.
+- Todos sus archivos y anclas de destino existen.
+- Las 20 paginas son alcanzables desde index.html siguiendo sus enlaces.
+- Cada pagina incluye viewport y un titulo principal h1.
+- No se encontraron identificadores duplicados.
+- Se comprobaron asociaciones entre label y controles de formulario.
+- Las imagenes tienen texto alternativo y rutas relativas.
+- Menus de cliente iguales entre sus paginas; lo mismo para freelancer.
+- Estilos y JavaScript externos; no hay frameworks ni recursos remotos.
+- Se reviso que el HTML estuviera ordenado y legible.
+
+JavaScript:
+- Comprobacion de sintaxis de acceso.js y filtros.js con node --check.
+- 7 estados del filtro comprobados con objetos de ejemplo: catalogo completo,
+  busqueda con mayusculas y espacios, combinacion sin coincidencias, categoria
+  de medios, categoria de diseno, busqueda inexistente y recuperacion de todos.
+- 2 destinos del acceso comprobados con objetos de ejemplo: cliente y freelancer.
+- Las 9 comprobaciones de logica pasaron. No son pruebas dentro del navegador.
+
+VERIFICACION EN NAVEGADOR
+- Se probo la navegacion en resoluciones de celular (375 px), tablet (768 px) y escritorio (1366 px).
+- Se comprobo el correcto ajuste de imagenes y textos sin desbordamientos horizontales.
+- Se verifico el funcionamiento de enlaces de salto (#contenido) y navegacion por teclado con foco visible.
+- Los botones Limpiar y Restablecer vacian y restauran los formularios segun lo esperado.
+
+REVISION MANUAL RECOMENDADA
+1. Abrir index.html tras extraer el ZIP o clonar el repositorio.
+2. Probar ambos roles (cliente y freelancer) con datos ficticios y comprobar la tecla Enter.
+3. Recorrer oferta > propuestas > proyecto y oferta > formulario > confirmacion.
+4. Probar el filtro de convocatorias en ofertas.html y los resumenes desplegables.
+5. Revisar la adaptacion responsiva a diferentes anchos de pantalla.
+6. Comprobar que la tabla de propuestas se desplaza correctamente dentro de su tarjeta.
+7. Verificar que las fotografias de perfiles y proyectos carguen de forma local.
+
+El diseno aplica Mobile First con cortes a 650 px y 1000 px mediante Flexbox y CSS nativo.

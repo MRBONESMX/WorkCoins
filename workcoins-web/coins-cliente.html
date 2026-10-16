@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WorkCoins UNI: maqueta escolar de proyectos universitarios en HTML y CSS.">
+    <title>Billetera de coins | WorkCoins UNI</title>
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body>
+    <a class="salto" href="#contenido">Saltar al contenido</a>
+    <header class="encabezado">
+      <div class="barra">
+        <a class="marca" href="dashboard-cliente.html" aria-label="WorkCoins, panel de cliente">WorkCoins<span>UNI</span>
+        </a>
+        <nav class="menu" aria-label="Menú de cliente">
+          <a href="dashboard-cliente.html">Mis ofertas</a>
+          <a href="nueva-oferta.html">Publicar</a>
+          <a href="proyectos-cliente.html">Mis proyectos</a>
+          <a href="coins-cliente.html" aria-current="page">Billetera Coins</a>
+        </nav>
+        <div class="perfil">
+          <a class="etiqueta" href="coins-cliente.html">◉ 650 iniciales</a>
+          <details>
+            <summary>
+              <img class="avatar-cabecera" src="imagenes/avatar-carlos.jpg" alt="Foto de perfil de Carlos Mendoza" width="28" height="28">
+              <span>Carlos Mendoza<small>Cliente · ejemplo</small>
+              </span>
+            </summary>
+            <p>
+              <a href="dashboard-cliente.html">Mi panel</a>
+              <br>
+              <a href="index.html">Cambiar de rol</a>
+            </p>
+          </details>
+        </div>
+      </div>
+    </header>
+    <main id="contenido" class="contenedor">
+      <p class="aviso-demo">Maqueta escolar · Personas y datos de ejemplo. Las pantallas muestran escenarios fijos; no se guardan cambios.</p>
+      <section class="presentacion">
+        <p class="mayusculas">Ecosistema financiero académico · Demostración</p>
+        <h1>Billetera de Coins — Gestión de saldo</h1>
+        <p class="texto-secundario">Los coins representan el costo de postular y cerrar tratos dentro del prototipo.</p>
+      </section>
+      <section class="tarjeta">
+        <div class="fila">
+          <div>
+            <p class="mayusculas">Saldo inicial del cliente</p>
+            <strong class="cifra">650 <small>coins de ejemplo</small>
+            </strong>
+          </div>
+          <p class="texto-pequeno">La navegación no modifica este saldo.<br>No existe una cuenta financiera conectada.</p>
+        </div>
+      </section>
+      <section aria-labelledby="titulo-paquetes">
+        <h2 id="titulo-paquetes">Catálogo de paquetes del prototipo</h2>
+        <div class="paquetes">
+          <article class="tarjeta">
+            <p class="mayusculas">Perfil inicial</p>
+            <h3>50 coins</h3>
+            <p class="cifra">$25 <small>USD</small>
+            </p>
+            <p>Paquete para comenzar a explorar las convocatorias.</p>
+            <a class="boton secundario ancho" href="#informacion-compra">Consultar 50 coins</a>
+          </article>
+          <article class="tarjeta destacada">
+            <span class="etiqueta naranja">Recomendado</span>
+            <p class="mayusculas">Mayor demanda</p>
+            <h3>120 coins</h3>
+            <p class="cifra">$55 <small>USD</small>
+            </p>
+            <p>Paquete intermedio mostrado en el diseño original.</p>
+            <a class="boton ancho" href="#informacion-compra">Consultar 120 coins</a>
+          </article>
+          <article class="tarjeta">
+            <p class="mayusculas">Volumen alto</p>
+            <h3>300 coins</h3>
+            <p class="cifra">$120 <small>USD</small>
+            </p>
+            <p>Paquete para un uso frecuente del catálogo.</p>
+            <a class="boton secundario ancho" href="#informacion-compra">Consultar 300 coins</a>
+          </article>
+        </div>
+      </section>
+      <section id="informacion-compra" class="aviso" tabindex="-1">
+        <h2>Consulta de paquetes</h2>
+        <p>Esta es una maqueta de la sección de compra. Los precios son ejemplos tomados de Figma; no son una oferta comercial. No se solicitan datos de tarjeta, no se realizan compras y no se agregan coins.</p>
+      </section>
+      <section class="tarjeta">
+        <h2>Regla uniforme de tramos</h2>
+        <div class="tabla-contenedor">
+          <table>
+            <caption>Tramos de coins usados en esta maqueta</caption>
+            <thead>
+              <tr>
+                <th scope="col">Propuestas recibidas</th>
+                <th scope="col">Postulación</th>
+                <th scope="col">Cierre del cliente</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1 a 10</td>
+                <td>10 coins</td>
+                <td>10 coins</td>
+              </tr>
+              <tr>
+                <td>11 a 25</td>
+                <td>20 coins</td>
+                <td>20 coins</td>
+              </tr>
+              <tr>
+                <td>26 a 30</td>
+                <td>35 coins</td>
+                <td>35 coins</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="texto-pequeno texto-secundario">Criterio uniforme tomado de la pantalla de creación de oferta. Publicar una oferta es gratuito. Son reglas del ejemplo escolar, sin cobros reales.</p>
+        <details>
+          <summary>¿Por qué se usa una sola tabla?</summary>
+          <div>
+            <p>El prototipo cambia los límites y costos entre pantallas. Esta versión mantiene los mismos tres tramos en la publicación, las ofertas, las propuestas y la billetera.</p>
+          </div>
+        </details>
+      </section>
+      <div class="acciones">
+        <a class="boton secundario" href="dashboard-cliente.html">← Volver a mi panel</a>
+      </div>
+    </main>
+    <footer class="pie-pagina">
+      <div class="pie-interior">
+        <p>WorkCoins UNI · Proyecto escolar · 2026</p>
+        <p>Datos ficticios de demostración · <a href="index.html">Volver al acceso</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

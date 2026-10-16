@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WorkCoins UNI: maqueta escolar de proyectos universitarios en HTML y CSS.">
+    <title>Proyectos del freelancer | WorkCoins UNI</title>
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body>
+    <a class="salto" href="#contenido">Saltar al contenido</a>
+    <header class="encabezado">
+      <div class="barra">
+        <a class="marca" href="dashboard-freelancer.html" aria-label="WorkCoins, panel de freelancer">WorkCoins<span>UNI</span>
+        </a>
+        <nav class="menu" aria-label="Menú de freelancer">
+          <a href="ofertas.html">Explorar ofertas</a>
+          <a href="proyectos-freelancer.html" aria-current="page">Mis proyectos</a>
+          <a href="coins-freelancer.html">Billetera Coins</a>
+          <a href="ganancias.html">Mis ganancias</a>
+        </nav>
+        <div class="perfil">
+          <a class="etiqueta" href="coins-freelancer.html">◉ 85 iniciales</a>
+          <details>
+            <summary>
+              <img class="avatar-cabecera" src="imagenes/avatar-sofia.jpg" alt="Foto de perfil de Sofía Valenzuela" width="28" height="28">
+              <span>Sofía Valenzuela<small>Freelancer · ejemplo</small>
+              </span>
+            </summary>
+            <p>
+              <a href="dashboard-freelancer.html">Mi panel</a>
+              <br>
+              <a href="index.html">Cambiar de rol</a>
+            </p>
+          </details>
+        </div>
+      </div>
+    </header>
+    <main id="contenido" class="contenedor">
+      <p class="aviso-demo">Maqueta escolar · Personas y datos de ejemplo. Las pantallas muestran escenarios fijos; no se guardan cambios.</p>
+      <section class="tarjeta presentacion">
+        <div class="persona">
+          <img class="avatar avatar-grande" src="imagenes/avatar-sofia.jpg" alt="Foto de perfil de Sofía Valenzuela" width="58" height="58">
+          <div>
+            <h1>Mis proyectos universitarios</h1>
+            <p class="texto-secundario">Sofía Valenzuela · Estudiante de Diseño de Interfaz</p>
+          </div>
+        </div>
+      </section>
+      <section class="resumen" aria-label="Resumen de proyectos">
+        <article class="tarjeta">
+          <h2>Proyecto activo</h2>
+          <strong class="cifra">1</strong>
+          <p>En ejecución en este escenario.</p>
+        </article>
+        <article class="tarjeta">
+          <h2>Finalizados</h2>
+          <strong class="cifra">2</strong>
+          <p>Proyectos anteriores del ejemplo.</p>
+        </article>
+        <article class="tarjeta">
+          <h2>Ingresos históricos</h2>
+          <strong class="cifra">$1,050 <small>USD</small>
+          </strong>
+          <a href="ganancias.html">Ver historial →</a>
+        </article>
+      </section>
+      <nav class="pestanas" aria-label="Secciones de proyectos">
+        <a href="#listado">Todos (3)</a>
+        <a href="#activos">Activo (1)</a>
+        <a href="#finalizados">Finalizados (2)</a>
+      </nav>
+      <section id="listado" aria-label="Lista de proyectos del freelancer">
+        <article id="activos" class="tarjeta">
+          <span class="etiqueta azul">Activo · PROY-2026-88</span>
+          <div class="fila">
+            <h2>Rediseño del Portal Web Institucional</h2>
+            <b>$420 USD</b>
+          </div>
+          <p class="texto-secundario">Carlos Mendoza · Colegio San Javier</p>
+          <div class="datos">
+            <div class="dato">
+              <small>Inicio</small>
+              <b>26 marzo 2026</b>
+            </div>
+            <div class="dato">
+              <small>Entrega pactada</small>
+              <b>15 abril 2026</b>
+            </div>
+          </div>
+          <label for="avance-freelancer">Progreso de avance: 40%</label>
+          <progress id="avance-freelancer" value="40" max="100">40%</progress>
+          <div class="acciones">
+            <a class="boton" href="proyecto-freelancer.html">Acceder al proyecto activo →</a>
+          </div>
+        </article>
+        <section id="finalizados" aria-labelledby="titulo-finalizados">
+          <h2 id="titulo-finalizados">Proyectos finalizados del ejemplo</h2>
+          <article class="tarjeta">
+            <span class="etiqueta verde">Finalizado · Pago de referencia</span>
+            <img class="miniatura-proyecto" src="imagenes/sistema-biblioteca.jpg" alt="Diseño de Interfaz para Sistema de Biblioteca Universitaria" width="800" height="150">
+            <div class="fila">
+              <h3>Diseño de Interfaz para Sistema de Biblioteca Universitaria</h3>
+              <b>$650 USD</b>
+            </div>
+            <p>Facultad de Humanidades · Finalizado el 10 febrero 2026.</p>
+            <a class="boton secundario" href="ganancias.html#biblioteca">Ver registro de ganancias →</a>
+          </article>
+          <article class="tarjeta">
+            <span class="etiqueta verde">Finalizado · Pago de referencia</span>
+            <img class="miniatura-proyecto" src="imagenes/manual-identidad.jpg" alt="Manual de Identidad Digital y Componentes Web" width="800" height="150">
+            <div class="fila">
+              <h3>Manual de Identidad Digital y Componentes Web</h3>
+              <b>$400 USD</b>
+            </div>
+            <p>Departamento de Posgrado · Finalizado el 28 enero 2026.</p>
+            <a class="boton secundario" href="ganancias.html#identidad">Ver registro de ganancias →</a>
+          </article>
+        </section>
+      </section>
+    </main>
+    <footer class="pie-pagina">
+      <div class="pie-interior">
+        <p>WorkCoins UNI · Proyecto escolar · 2026</p>
+        <p>Datos ficticios de demostración · <a href="index.html">Volver al acceso</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

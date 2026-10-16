@@ -1,0 +1,9 @@
+WORKCOINS UNI - EJEMPLO ESCOLAR
+
+Este archivo no es un comprobante de pago ni un contrato.
+Proyecto de referencia: PROY-2026-88 - Rediseño del Portal Web Institucional.
+Personas ficticias: Carlos Mendoza y Sofía Valenzuela.
+Monto de ejemplo: 420 USD. Costo de cierre de ejemplo: 10 coins.
+Saldo inicial del cliente: 650 coins. Saldo proyectado: 640 coins.
+Estado ilustrado: finalizado el 14 de abril de 2026.
+No se realizó ninguna operación ni se verificó una entrega.

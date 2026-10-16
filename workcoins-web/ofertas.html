@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WorkCoins UNI: maqueta escolar de proyectos universitarios en HTML y CSS.">
+    <title>Explorar ofertas | WorkCoins UNI</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="filtros.js" defer></script>
+  </head>
+  <body>
+    <a class="salto" href="#contenido">Saltar al contenido</a>
+    <header class="encabezado">
+      <div class="barra">
+        <a class="marca" href="dashboard-freelancer.html" aria-label="WorkCoins, panel de freelancer">WorkCoins<span>UNI</span>
+        </a>
+        <nav class="menu" aria-label="Menú de freelancer">
+          <a href="ofertas.html" aria-current="page">Explorar ofertas</a>
+          <a href="proyectos-freelancer.html">Mis proyectos</a>
+          <a href="coins-freelancer.html">Billetera Coins</a>
+          <a href="ganancias.html">Mis ganancias</a>
+        </nav>
+        <div class="perfil">
+          <a class="etiqueta" href="coins-freelancer.html">◉ 85 iniciales</a>
+          <details>
+            <summary>
+              <img class="avatar-cabecera" src="imagenes/avatar-sofia.jpg" alt="Foto de perfil de Sofía Valenzuela" width="28" height="28">
+              <span>Sofía Valenzuela<small>Freelancer · ejemplo</small>
+              </span>
+            </summary>
+            <p>
+              <a href="dashboard-freelancer.html">Mi panel</a>
+              <br>
+              <a href="index.html">Cambiar de rol</a>
+            </p>
+          </details>
+        </div>
+      </div>
+    </header>
+    <main id="contenido" class="contenedor">
+      <p class="aviso-demo">Maqueta escolar · Personas y datos de ejemplo. Las pantallas muestran escenarios fijos; no se guardan cambios.</p>
+      <section class="presentacion">
+        <p class="mayusculas">Convocatorias académicas 2026</p>
+        <div class="fila">
+          <div>
+            <h1>Explorar ofertas de proyectos universitarios</h1>
+            <p class="texto-secundario">Revisa el presupuesto y el tramo de coins antes de postularte.</p>
+          </div>
+          <span class="etiqueta">Saldo inicial: 85 coins</span>
+        </div>
+      </section>
+      <section class="tarjeta" aria-labelledby="titulo-filtros">
+        <h2 id="titulo-filtros">Buscar una convocatoria</h2>
+        <div class="filtros">
+          <div class="campo">
+            <label for="buscar">Palabras del título</label>
+            <input id="buscar" type="search" placeholder="Ejemplo: rediseño" aria-controls="catalogo">
+          </div>
+          <div class="campo">
+            <label for="filtro-categoria">Categoría</label>
+            <select id="filtro-categoria" aria-controls="catalogo">
+              <option value="todas">Todas</option>
+              <option value="diseno">Diseño Web &amp; UI</option>
+              <option value="medios">Contenido y medios</option>
+            </select>
+          </div>
+        </div>
+        <p id="resultado" class="resultado" role="status">3 ofertas de ejemplo.</p>
+        <noscript>
+          <p>Con JavaScript desactivado se muestran las tres ofertas. Todos los enlaces siguen disponibles.</p>
+        </noscript>
+      </section>
+      <section id="catalogo" aria-label="Ofertas disponibles">
+        <article class="tarjeta destacada oferta" data-categoria="diseno">
+          <img class="miniatura-proyecto" src="imagenes/proyecto-redisenoweb.jpg" alt="Bocetos y diseño web del portal institucional" width="800" height="150">
+          <div class="etiquetas">
+            <span class="etiqueta">OFERTA-2026-01</span>
+            <span class="etiqueta naranja">Convocatoria destacada</span>
+          </div>
+          <div class="fila">
+            <div>
+              <h2>Rediseño del Portal Web Institucional</h2>
+              <p class="texto-secundario">Carlos Mendoza · Colegio San Javier</p>
+            </div>
+            <div class="dato">
+              <small>Presupuesto</small>
+              <b>$450 USD</b>
+            </div>
+          </div>
+          <p>Interfaz institucional con wireframes y prototipo navegable en Figma, enfoque accesible y responsivo.</p>
+          <div class="datos">
+            <div class="dato">
+              <small>Plazo</small>
+              <b>3 semanas</b>
+            </div>
+            <div class="dato">
+              <small>Propuestas</small>
+              <b>8 recibidas</b>
+            </div>
+            <div class="dato">
+              <small>Costo</small>
+              <b>10 coins</b>
+            </div>
+          </div>
+          <div class="acciones">
+            <a class="boton" href="oferta-freelancer.html">Ver oferta y postularme →</a>
+          </div>
+        </article>
+        <article class="tarjeta oferta" data-categoria="medios">
+          <img class="miniatura-proyecto" src="imagenes/ilustracion-laboratorio.jpg" alt="Ilustraciones para guías de laboratorio" width="800" height="150">
+          <span class="etiqueta">Contenido y medios</span>
+          <div class="fila">
+            <h2>Ilustración Vectorial para Manual de Laboratorio</h2>
+            <b>$280 USD</b>
+          </div>
+          <p>Ilustraciones para las guías de laboratorio. Entrega de archivos editables y exportaciones.</p>
+          <div class="etiquetas">
+            <span class="etiqueta">2 semanas</span>
+            <span class="etiqueta">4 propuestas</span>
+            <span class="etiqueta naranja">10 coins</span>
+          </div>
+          <details>
+            <summary>Ver convocatoria de ilustración</summary>
+            <div>
+              <p>Cliente de ejemplo: Dra. Patricia Ávalos · Departamento de Biología Celular.</p>
+              <p>Creación de 14 infografías con entrega de archivos en Illustrator.</p>
+              <p class="texto-pequeno texto-secundario">Figma muestra esta oferta como tarjeta; no se proporcionó un formulario propio para ella.</p>
+            </div>
+          </details>
+        </article>
+        <article class="tarjeta oferta" data-categoria="diseno">
+          <img class="miniatura-proyecto" src="imagenes/boletin-academico.jpg" alt="Maquetación editorial de boletín académico" width="800" height="150">
+          <span class="etiqueta">Diseño Web &amp; UI</span>
+          <div class="fila">
+            <h2>Maquetación Accesible de Boletín Académico</h2>
+            <b>$320 USD</b>
+          </div>
+          <p>Estructuración de componentes HTML y CSS para la edición de una revista universitaria.</p>
+          <div class="etiquetas">
+            <span class="etiqueta">2 semanas</span>
+            <span class="etiqueta">12 propuestas</span>
+            <span class="etiqueta naranja">20 coins</span>
+          </div>
+          <details>
+            <summary>Ver convocatoria del boletín</summary>
+            <div>
+              <p>Cliente de ejemplo: Mtra. Roberta Garza · Facultad de Educación.</p>
+              <p>La entrega requiere una estructura ligera con soporte para lectores de pantalla.</p>
+              <p class="texto-pequeno texto-secundario">El recorrido completo del prototipo corresponde a la oferta del portal institucional.</p>
+            </div>
+          </details>
+        </article>
+      </section>
+      <details class="tarjeta">
+        <summary>¿Cómo funcionan los tramos de coins?</summary>
+        <div>
+          <div class="tabla-contenedor">
+            <table>
+              <caption>Tramos de coins usados en esta maqueta</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Propuestas recibidas</th>
+                  <th scope="col">Postulación</th>
+                  <th scope="col">Cierre del cliente</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1 a 10</td>
+                  <td>10 coins</td>
+                  <td>10 coins</td>
+                </tr>
+                <tr>
+                  <td>11 a 25</td>
+                  <td>20 coins</td>
+                  <td>20 coins</td>
+                </tr>
+                <tr>
+                  <td>26 a 30</td>
+                  <td>35 coins</td>
+                  <td>35 coins</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="texto-pequeno texto-secundario">Criterio uniforme tomado de la pantalla de creación de oferta. Publicar una oferta es gratuito. Son reglas del ejemplo escolar, sin cobros reales.</p>
+        </div>
+      </details>
+    </main>
+    <footer class="pie-pagina">
+      <div class="pie-interior">
+        <p>WorkCoins UNI · Proyecto escolar · 2026</p>
+        <p>Datos ficticios de demostración · <a href="index.html">Volver al acceso</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

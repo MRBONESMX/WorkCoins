@@ -1,0 +1,5 @@
+WORKCOINS UNI - REGISTRO FICTICIO
+Diseño de Interfaz para Sistema de Biblioteca Universitaria
+Monto de referencia: 650 USD
+Fecha de referencia: 10 febrero 2026
+Este archivo es un ejemplo escolar. No acredita un pago.

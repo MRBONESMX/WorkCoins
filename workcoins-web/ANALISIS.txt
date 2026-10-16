@@ -1,0 +1,96 @@
+ANALISIS DE WORKCOINS
+
+1. MATERIAL CONSULTADO
+- Archivo Figma WorkCoins: zUHmdwMkyLA57xy4WyXg8P.
+- UNIDAD I.pdf: 27 páginas; fundamentos de Internet, web y marcado.
+- UNIDAD II-2.pdf: 55 páginas; estructura, textos, enlaces, imágenes, tablas,
+  formularios y etiquetas semánticas. Se revisó su texto extraíble; algunas
+  páginas son gráficas y no exponen texto.
+- Ejercicios SebastianACTS: LaboratiorioUABCS, Kardex SIIA, Explora BCS,
+  Cafeteria, Diseño responsivo, CartaPresentación, cssNuevo y programacionWeb.
+- Se inventariaron los ZIP: contienen copias de ejercicios ya identificados.
+- No se localizó un formulario de registro independiente con todos los campos
+  enumerados en las instrucciones. No se atribuyó contenido a un archivo ausente.
+- La carpeta de trabajo WorkCoins estaba vacía antes de esta implementación.
+
+2. PANTALLAS DE ESCRITORIO Y ARCHIVOS
+Figma incluye 17 pantallas de escritorio, 17 móviles y una guía de estilos.
+La misma página HTML se adapta a diferentes anchos, sin duplicar versión móvil.
+
+Pantalla de Figma -> archivo y función
+Inicio de sesión (1:4127) -> index.html: acceso de demostración por rol.
+Dashboard Cliente (1:4490) -> dashboard-cliente.html: resumen y oferta publicada.
+Creación de oferta (1:4245) -> nueva-oferta.html: formulario de práctica.
+Detalle de oferta del cliente (1:4715) -> oferta-cliente.html: requisitos y candidaturas.
+Listado de propuestas (1:4985) -> propuestas.html: ocho candidatos y sus resúmenes.
+Evaluación y cierre de trato (1:5321) -> detalle-propuesta.html: propuesta de Sofía.
+Dashboard Freelancer (1:5657) -> dashboard-freelancer.html: saldo y recomendación.
+Explorador de ofertas (1:5909) -> ofertas.html: tres tarjetas y filtro local.
+Detalle de oferta del freelancer (1:6163) -> oferta-freelancer.html: encargo y costo.
+Enviar propuesta (1:6446) -> enviar-propuesta.html: cotización y portafolio local.
+Confirmación del costo (1:6710) -> confirmacion-propuesta.html: ejemplo estático.
+Proyectos del cliente (1:6864) -> proyectos-cliente.html: escenarios por estado.
+Proyectos del freelancer (1:7045) -> proyectos-freelancer.html: activo e históricos.
+Detalle del proyecto (1:7282) -> proyecto-cliente.html y proyecto-freelancer.html.
+Proyecto finalizado (1:7516) -> proyecto-finalizado-cliente.html y
+  proyecto-finalizado-freelancer.html: resumen final y descarga de ejemplo.
+Comprar coins (1:11140) -> coins-cliente.html y coins-freelancer.html: catálogo visual.
+Ganancias (1:11392) -> ganancias.html: dos registros que suman 1,050 USD.
+Guía visual (1:3837) -> referencia de colores, tipografía y tarjetas, no una página extra.
+
+Las tres variantes por rol se justifican para que consultar un proyecto o una
+billetera no cambie accidentalmente el perfil del usuario. Total: 20 HTML.
+No se agregó una pantalla de registro que no existe en el material revisado.
+
+3. ELEMENTOS COMPARTIDOS
+- Marca WorkCoins UNI y tipografía Arial disponible sin conexión.
+- Menú, encabezado, perfil y pie uniformes para cada rol.
+- Tarjetas blancas, fondo claro, naranja, etiquetas y franjas de información.
+- Clases sencillas en español y una hoja CSS externa.
+- Enlaces de regreso con destinos específicos, no dependientes del historial.
+- Avisos que identifican las vistas como ejemplos y los saldos como iniciales.
+
+4. FLUJOS
+Cliente: acceso > panel > nueva oferta > detalle > propuestas > evaluación >
+  proyecto activo > proyecto finalizado > listado de proyectos.
+Freelancer: acceso > panel > explorador > detalle > propuesta > confirmación >
+  proyectos; desde la cabecera también puede consultar ganancias y coins.
+Los formularios abren ejemplos fijos y no envían sus campos a un servidor.
+Los resúmenes secundarios usan details; no remiten al expediente de otra persona.
+
+5. INCONSISTENCIAS OBSERVADAS Y DECISIONES
+- Varias pantallas del cliente tenían una etiqueta de freelancer: se separaron
+  cabeceras y enlaces por rol.
+- El listado de proyectos del freelancer mostraba datos del cliente en la
+  cabecera: ahora conserva el perfil de Sofía.
+- El dashboard del cliente combinaba 640 y 650 coins: las cabeceras de esta
+  maqueta se identifican como saldos iniciales. Las proyecciones se etiquetan.
+- El costo y los límites de los tramos cambiaban entre vistas: se unificaron
+  en 1-10 = 10, 11-25 = 20, 26-30 = 35 coins, tomando la creación de oferta
+  como criterio del ejemplo. No se presenta como una regla real del servicio.
+- Las cifras de los históricos variaban: se mantuvo 650 + 400 = 1,050 USD.
+- El prototipo decía enviado/pagado: aquí se explica que se visita un ejemplo,
+  sin afirmar que se procesó un envío, un contrato o un pago.
+- Los botones de compra llevan a una explicación de la maqueta.
+- Recuperación, registro y descargas de archivos originales no disponibles
+  se explican sin inventar un sistema o un documento inexistente.
+- No se verificaron las conexiones internas del modo prototipo de Figma.
+  El flujo implementado se reconstruyó por contenido y propósito de las pantallas.
+
+6. NIVEL DEL CURSO Y MOBILE FIRST
+Se utilizan encabezados, párrafos, listas, enlaces, tablas, formularios, label,
+input, select, textarea, detalles HTML, header, nav, main, article, aside y footer.
+Flexbox y @media ya aparecen en Cafeteria y Diseño responsivo.
+No se usa una tabla para organizar el diseño general de una página.
+El CSS empieza en una columna para celular, a 650 px reorganiza resúmenes y
+datos, y a 1000 px muestra columnas y navegación de escritorio.
+Las tablas se desplazan dentro de su contenedor y las imágenes son flexibles.
+No hay dependencias externas. El filtro y la elección del panel son JavaScript
+básico separado, sin almacenamiento ni procesamiento del formulario.
+
+7. ALCANCE Y RECURSOS
+Las pantallas de escritorio y las variantes de Figma se tomaron como referencia visual.
+Para la versión móvil, se implementó una maquetación responsiva Mobile First mediante Flexbox y consultas de medios (@media) a 650 px y 1000 px.
+En lugar de las imágenes de muestra del lienzo de Figma que no se encontraban exportadas, se incorporaron fotografías y recursos visuales locales que corresponden al contexto universitario de los perfiles (Carlos, Sofía y candidatos de diseño), así como capturas y bocetos de wireframes e interfaces para los proyectos.
+Todos los recursos están guardados localmente en imagenes/ para asegurar autonomía total sin requerir conexión a internet.
+Para el detalle de las revisiones realizadas, consulta PRUEBAS.txt.

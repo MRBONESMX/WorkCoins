@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WorkCoins UNI: maqueta escolar de proyectos universitarios en HTML y CSS.">
+    <title>Panel del cliente | WorkCoins UNI</title>
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body>
+    <a class="salto" href="#contenido">Saltar al contenido</a>
+    <header class="encabezado">
+      <div class="barra">
+        <a class="marca" href="dashboard-cliente.html" aria-label="WorkCoins, panel de cliente">WorkCoins<span>UNI</span>
+        </a>
+        <nav class="menu" aria-label="Menú de cliente">
+          <a href="dashboard-cliente.html" aria-current="page">Mis ofertas</a>
+          <a href="nueva-oferta.html">Publicar</a>
+          <a href="proyectos-cliente.html">Mis proyectos</a>
+          <a href="coins-cliente.html">Billetera Coins</a>
+        </nav>
+        <div class="perfil">
+          <a class="etiqueta" href="coins-cliente.html">◉ 650 iniciales</a>
+          <details>
+            <summary>
+              <img class="avatar-cabecera" src="imagenes/avatar-carlos.jpg" alt="Foto de perfil de Carlos Mendoza" width="28" height="28">
+              <span>Carlos Mendoza<small>Cliente · ejemplo</small>
+              </span>
+            </summary>
+            <p>
+              <a href="dashboard-cliente.html">Mi panel</a>
+              <br>
+              <a href="index.html">Cambiar de rol</a>
+            </p>
+          </details>
+        </div>
+      </div>
+    </header>
+    <main id="contenido" class="contenedor">
+      <p class="aviso-demo">Maqueta escolar · Personas y datos de ejemplo. Las pantallas muestran escenarios fijos; no se guardan cambios.</p>
+      <section class="tarjeta presentacion">
+        <div class="fila">
+          <div class="persona">
+            <img class="avatar avatar-grande" src="imagenes/avatar-carlos.jpg" alt="Foto de perfil de Carlos Mendoza" width="58" height="58">
+            <div>
+              <span class="etiqueta">Cliente · Colegio San Javier</span>
+              <h1>Bienvenido, Carlos Mendoza</h1>
+              <p class="texto-secundario">Panel de gestión de proyectos universitarios y microproyectos.</p>
+            </div>
+          </div>
+          <a class="boton" href="nueva-oferta.html">＋ Publicar nueva oferta</a>
+        </div>
+      </section>
+      <section class="resumen" aria-label="Resumen del cliente">
+        <article class="tarjeta">
+          <h2>Ofertas publicadas</h2>
+          <strong class="cifra">1 <small>activa</small>
+          </strong>
+          <p>8 propuestas recibidas</p>
+          <p class="franja texto-pequeno">Costo de publicación: <b>0 coins</b>
+          </p>
+        </article>
+        <article class="tarjeta">
+          <h2>Proyectos en curso</h2>
+          <strong class="cifra">0 <small>en este momento del ejemplo</small>
+          </strong>
+          <p>Antes del cierre del trato</p>
+          <a href="proyectos-cliente.html">Ver escenarios de proyectos →</a>
+        </article>
+        <article class="tarjeta">
+          <h2>Saldo inicial</h2>
+          <strong class="cifra">650 <small>coins</small>
+          </strong>
+          <p>Ejemplo de saldo para contratar.</p>
+          <a href="coins-cliente.html">Consultar billetera →</a>
+        </article>
+      </section>
+      <section id="ofertas" aria-labelledby="titulo-ofertas">
+        <div class="fila">
+          <h2 id="titulo-ofertas">Tus ofertas publicadas <span class="etiqueta">1</span>
+          </h2>
+          <span class="texto-pequeno">Todas</span>
+        </div>
+        <article class="tarjeta">
+          <div class="fila">
+            <div class="etiquetas">
+              <span class="etiqueta">OFERTA-2026-01</span>
+              <span class="etiqueta">Diseño Web &amp; UI</span>
+            </div>
+            <span class="etiqueta azul">Publicada</span>
+          </div>
+          <p class="texto-pequeno texto-secundario">Publicada: 24 de marzo de 2026</p>
+          <h2>Rediseño del Portal Web Institucional</h2>
+          <p>Modernización de la interfaz institucional para padres y alumnos, con navegación accesible y distribución responsiva.</p>
+          <div class="datos">
+            <div class="dato">
+              <small>Presupuesto</small>
+              <b>$450 USD</b>
+            </div>
+            <div class="dato">
+              <small>Plazo</small>
+              <b>3 semanas</b>
+            </div>
+            <div class="dato">
+              <small>Modalidad</small>
+              <b>Remoto / hito único</b>
+            </div>
+          </div>
+          <div class="franja">
+            <b>Has recibido 8 propuestas de freelancers</b>
+            <p class="texto-pequeno">Postulantes de Ingeniería y Diseño listos para tu revisión.</p>
+          </div>
+          <div class="acciones">
+            <a class="boton secundario" href="oferta-cliente.html">Ver detalle</a>
+            <a class="boton" href="propuestas.html">Revisar las 8 propuestas →</a>
+          </div>
+        </article>
+      </section>
+      <details class="tarjeta">
+        <summary>Guía sencilla del cliente</summary>
+        <div>
+          <p>Publica una oferta, consulta las propuestas y abre la evaluación. Después podrás recorrer las vistas de proyecto activo y finalizado.</p>
+          <p>Los enlaces muestran ejemplos fijos del flujo. No publican ofertas ni contratan personas.</p>
+        </div>
+      </details>
+    </main>
+    <footer class="pie-pagina">
+      <div class="pie-interior">
+        <p>WorkCoins UNI · Proyecto escolar · 2026</p>
+        <p>Datos ficticios de demostración · <a href="index.html">Volver al acceso</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

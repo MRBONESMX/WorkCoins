@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WorkCoins UNI: maqueta escolar de proyectos universitarios en HTML y CSS.">
+    <title>Crear nueva oferta | WorkCoins UNI</title>
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body>
+    <a class="salto" href="#contenido">Saltar al contenido</a>
+    <header class="encabezado">
+      <div class="barra">
+        <a class="marca" href="dashboard-cliente.html" aria-label="WorkCoins, panel de cliente">WorkCoins<span>UNI</span>
+        </a>
+        <nav class="menu" aria-label="Menú de cliente">
+          <a href="dashboard-cliente.html">Mis ofertas</a>
+          <a href="nueva-oferta.html" aria-current="page">Publicar</a>
+          <a href="proyectos-cliente.html">Mis proyectos</a>
+          <a href="coins-cliente.html">Billetera Coins</a>
+        </nav>
+        <div class="perfil">
+          <a class="etiqueta" href="coins-cliente.html">◉ 650 iniciales</a>
+          <details>
+            <summary>
+              <img class="avatar-cabecera" src="imagenes/avatar-carlos.jpg" alt="Foto de perfil de Carlos Mendoza" width="28" height="28">
+              <span>Carlos Mendoza<small>Cliente · ejemplo</small>
+              </span>
+            </summary>
+            <p>
+              <a href="dashboard-cliente.html">Mi panel</a>
+              <br>
+              <a href="index.html">Cambiar de rol</a>
+            </p>
+          </details>
+        </div>
+      </div>
+    </header>
+    <main id="contenido" class="contenedor">
+      <p class="aviso-demo">Maqueta escolar · Personas y datos de ejemplo. Las pantallas muestran escenarios fijos; no se guardan cambios.</p>
+      <p class="ruta">
+        <a href="dashboard-cliente.html">Mis ofertas</a> / Nueva publicación</p>
+      <div class="columnas">
+        <section class="principal tarjeta">
+          <span class="etiqueta naranja">Publicación libre de costo</span>
+          <h1>Crear nueva oferta de proyecto</h1>
+          <p class="texto-secundario">Publicar es gratuito. Los coins del cliente se consideran al cerrar un trato.</p>
+          <p class="aviso">Formulario de práctica. Puedes editar los campos; «Ver oferta de ejemplo» abre una ficha fija y no guarda ni publica lo escrito.</p>
+          <form class="formulario" action="oferta-cliente.html" method="get">
+            <div class="campo">
+              <label for="titulo">Título de la oferta</label>
+              <input id="titulo" type="text" value="Rediseño del Portal Web Institucional" maxlength="100" required>
+            </div>
+            <div class="campo">
+              <label for="categoria">Categoría de talento</label>
+              <select id="categoria" required>
+                <option>Diseño Web &amp; UI</option>
+                <option>Contenido y medios</option>
+                <option>Desarrollo web</option>
+              </select>
+            </div>
+            <div class="campo">
+              <label for="descripcion">Descripción del requerimiento</label>
+              <textarea id="descripcion" rows="6" minlength="30" maxlength="1500" required>Rediseño completo de la interfaz del portal web institucional, con wireframes y prototipo navegable en Figma, enfoque accesible y responsivo.</textarea>
+            </div>
+            <div class="datos">
+              <div class="campo">
+                <label for="presupuesto">Presupuesto estimado (USD)</label>
+                <input id="presupuesto" type="number" min="1" step="1" value="450" required>
+              </div>
+              <div class="campo">
+                <label for="plazo">Plazo estimado</label>
+                <select id="plazo">
+                  <option>1 semana</option>
+                  <option>2 semanas</option>
+                  <option selected>3 semanas</option>
+                  <option>4 semanas</option>
+                </select>
+              </div>
+              <div class="campo">
+                <label for="fecha">Límite de recepción</label>
+                <input id="fecha" type="date" value="2026-04-15" required>
+              </div>
+            </div>
+            <div class="aviso">
+              <b>Costo de publicación: 0 coins</b>
+              <br>En el ejemplo de 8 propuestas, cerrar el trato corresponde al tramo de 10 coins.</div>
+            <div class="acciones">
+              <a class="boton secundario" href="dashboard-cliente.html">Cancelar</a>
+              <button class="secundario" type="reset">Restablecer</button>
+              <button type="submit">Ver oferta de ejemplo →</button>
+            </div>
+          </form>
+        </section>
+        <aside class="lateral">
+          <section class="tarjeta">
+            <figure>
+              <img class="imagen-proyecto" src="imagenes/proyecto-redisenoweb.jpg" width="960" height="300" alt="Bocetos de interfaz y wireframes del rediseño del portal web institucional">
+              <figcaption>Proceso de diseño: wireframes y prototipo interactivo para celular y escritorio.</figcaption>
+            </figure>
+            <p class="mayusculas">Vista previa de referencia</p>
+            <h2>Rediseño Web Institucional</h2>
+            <p>Prototipo accesible y responsivo para la comunidad universitaria.</p>
+            <div class="etiquetas">
+              <span class="etiqueta">$450 USD</span>
+              <span class="etiqueta">3 semanas</span>
+              <span class="etiqueta">0 coins al publicar</span>
+            </div>
+          </section>
+          <section class="tarjeta">
+            <h2>Escala de cierre</h2>
+            <div class="tabla-contenedor">
+              <table>
+                <caption>Tramos de coins usados en esta maqueta</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Propuestas recibidas</th>
+                    <th scope="col">Postulación</th>
+                    <th scope="col">Cierre del cliente</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1 a 10</td>
+                    <td>10 coins</td>
+                    <td>10 coins</td>
+                  </tr>
+                  <tr>
+                    <td>11 a 25</td>
+                    <td>20 coins</td>
+                    <td>20 coins</td>
+                  </tr>
+                  <tr>
+                    <td>26 a 30</td>
+                    <td>35 coins</td>
+                    <td>35 coins</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="texto-pequeno texto-secundario">Criterio uniforme tomado de la pantalla de creación de oferta. Publicar una oferta es gratuito. Son reglas del ejemplo escolar, sin cobros reales.</p>
+          </section>
+        </aside>
+      </div>
+    </main>
+    <footer class="pie-pagina">
+      <div class="pie-interior">
+        <p>WorkCoins UNI · Proyecto escolar · 2026</p>
+        <p>Datos ficticios de demostración · <a href="index.html">Volver al acceso</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

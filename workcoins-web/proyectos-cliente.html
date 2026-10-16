@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WorkCoins UNI: maqueta escolar de proyectos universitarios en HTML y CSS.">
+    <title>Proyectos del cliente | WorkCoins UNI</title>
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body>
+    <a class="salto" href="#contenido">Saltar al contenido</a>
+    <header class="encabezado">
+      <div class="barra">
+        <a class="marca" href="dashboard-cliente.html" aria-label="WorkCoins, panel de cliente">WorkCoins<span>UNI</span>
+        </a>
+        <nav class="menu" aria-label="Menú de cliente">
+          <a href="dashboard-cliente.html">Mis ofertas</a>
+          <a href="nueva-oferta.html">Publicar</a>
+          <a href="proyectos-cliente.html" aria-current="page">Mis proyectos</a>
+          <a href="coins-cliente.html">Billetera Coins</a>
+        </nav>
+        <div class="perfil">
+          <a class="etiqueta" href="coins-cliente.html">◉ 650 iniciales</a>
+          <details>
+            <summary>
+              <img class="avatar-cabecera" src="imagenes/avatar-carlos.jpg" alt="Foto de perfil de Carlos Mendoza" width="28" height="28">
+              <span>Carlos Mendoza<small>Cliente · ejemplo</small>
+              </span>
+            </summary>
+            <p>
+              <a href="dashboard-cliente.html">Mi panel</a>
+              <br>
+              <a href="index.html">Cambiar de rol</a>
+            </p>
+          </details>
+        </div>
+      </div>
+    </header>
+    <main id="contenido" class="contenedor">
+      <p class="aviso-demo">Maqueta escolar · Personas y datos de ejemplo. Las pantallas muestran escenarios fijos; no se guardan cambios.</p>
+      <section class="presentacion">
+        <p class="mayusculas">Panel de organización · Ciclo académico 2026</p>
+        <div class="fila">
+          <div>
+            <h1>Gestión de proyectos y convocatorias</h1>
+            <p class="texto-secundario">Carlos Mendoza · Colegio San Javier</p>
+          </div>
+          <a class="boton" href="nueva-oferta.html">＋ Publicar convocatoria</a>
+        </div>
+      </section>
+      <p class="aviso">Estas fichas presentan distintos momentos del prototipo. Recorrerlas no cambia el estado de la oferta ni el saldo.</p>
+      <nav class="pestanas" aria-label="Secciones de proyectos">
+        <a href="#listado">Todos (3)</a>
+        <a href="#activos">Activo (1)</a>
+        <a href="#publicados">Publicada (1)</a>
+        <a href="#finalizados">Finalizado (1)</a>
+      </nav>
+      <section id="listado" aria-label="Lista de proyectos">
+        <article id="activos" class="tarjeta">
+          <div class="etiquetas">
+            <span class="etiqueta">PROY-2026-88</span>
+            <span class="etiqueta azul">Activo</span>
+          </div>
+          <div class="fila">
+            <h2>Rediseño del Portal Web Institucional</h2>
+            <b>$420 USD</b>
+          </div>
+          <div class="persona">
+            <img class="avatar" src="imagenes/avatar-sofia.jpg" alt="Foto de perfil de Sofía Valenzuela" width="44" height="44">
+            <p>Freelancer: <b>Sofía Valenzuela</b>
+              <br>
+              <small>Diseño de interfaz · Perfil de ejemplo</small>
+            </p>
+          </div>
+          <div class="datos">
+            <div class="dato">
+              <small>Fecha de inicio</small>
+              <b>26 marzo 2026</b>
+            </div>
+            <div class="dato">
+              <small>Entrega pactada</small>
+              <b>15 abril 2026</b>
+            </div>
+          </div>
+          <label for="avance-cliente">Avance registrado: 40%</label>
+          <progress id="avance-cliente" value="40" max="100">40%</progress>
+          <div class="fila">
+            <p class="texto-pequeno">10 coins en reserva en este escenario.</p>
+            <a class="boton" href="proyecto-cliente.html">Ver detalle del proyecto →</a>
+          </div>
+        </article>
+        <article id="publicados" class="tarjeta">
+          <span class="etiqueta">Publicada · Escenario anterior al trato</span>
+          <div class="fila">
+            <h2>Rediseño del Portal Web Institucional</h2>
+            <b>$450 USD</b>
+          </div>
+          <p>Convocatoria abierta con 8 propuestas recibidas.</p>
+          <a class="boton secundario" href="propuestas.html">Ver propuestas →</a>
+        </article>
+        <article id="finalizados" class="tarjeta">
+          <span class="etiqueta verde">Finalizado</span>
+          <div class="fila">
+            <h2>Digitalización del Archivo Histórico Escolar</h2>
+            <b>$350 USD</b>
+          </div>
+          <p>Freelancer de ejemplo: Diego Paredes.</p>
+          <details>
+            <summary>Ver resumen del archivo histórico</summary>
+            <div>
+              <p>Trabajo de digitalización y organización documental concluido en el ejemplo. El material proporcionado no incluye un expediente individual para este proyecto.</p>
+            </div>
+          </details>
+        </article>
+      </section>
+    </main>
+    <footer class="pie-pagina">
+      <div class="pie-interior">
+        <p>WorkCoins UNI · Proyecto escolar · 2026</p>
+        <p>Datos ficticios de demostración · <a href="index.html">Volver al acceso</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

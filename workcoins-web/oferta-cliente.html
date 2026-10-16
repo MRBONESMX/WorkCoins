@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WorkCoins UNI: maqueta escolar de proyectos universitarios en HTML y CSS.">
+    <title>Detalle de tu oferta | WorkCoins UNI</title>
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body>
+    <a class="salto" href="#contenido">Saltar al contenido</a>
+    <header class="encabezado">
+      <div class="barra">
+        <a class="marca" href="dashboard-cliente.html" aria-label="WorkCoins, panel de cliente">WorkCoins<span>UNI</span>
+        </a>
+        <nav class="menu" aria-label="Menú de cliente">
+          <a href="dashboard-cliente.html" aria-current="page">Mis ofertas</a>
+          <a href="nueva-oferta.html">Publicar</a>
+          <a href="proyectos-cliente.html">Mis proyectos</a>
+          <a href="coins-cliente.html">Billetera Coins</a>
+        </nav>
+        <div class="perfil">
+          <a class="etiqueta" href="coins-cliente.html">◉ 650 iniciales</a>
+          <details>
+            <summary>
+              <img class="avatar-cabecera" src="imagenes/avatar-carlos.jpg" alt="Foto de perfil de Carlos Mendoza" width="28" height="28">
+              <span>Carlos Mendoza<small>Cliente · ejemplo</small>
+              </span>
+            </summary>
+            <p>
+              <a href="dashboard-cliente.html">Mi panel</a>
+              <br>
+              <a href="index.html">Cambiar de rol</a>
+            </p>
+          </details>
+        </div>
+      </div>
+    </header>
+    <main id="contenido" class="contenedor">
+      <p class="aviso-demo">Maqueta escolar · Personas y datos de ejemplo. Las pantallas muestran escenarios fijos; no se guardan cambios.</p>
+      <div class="fila presentacion">
+        <p class="ruta">
+          <a href="dashboard-cliente.html">Mis ofertas</a> / OFERTA-2026-01</p>
+        <a class="boton secundario" href="nueva-oferta.html">Abrir formulario de ejemplo</a>
+      </div>
+      <div class="columnas">
+        <div class="principal">
+          <article class="tarjeta">
+            <span class="etiqueta naranja">Diseño Web &amp; UI</span>
+            <h1>Rediseño del Portal Web Institucional</h1>
+            <p class="texto-secundario">Publicado por Carlos Mendoza · Colegio San Javier</p>
+            <div class="datos">
+              <div class="dato">
+                <small>Presupuesto</small>
+                <b>$450 USD</b>
+              </div>
+              <div class="dato">
+                <small>Plazo</small>
+                <b>3 semanas</b>
+              </div>
+              <div class="dato">
+                <small>Publicación</small>
+                <b>24 mar 2026</b>
+              </div>
+              <div class="dato">
+                <small>Entrega estimada</small>
+                <b>15 abr 2026</b>
+              </div>
+            </div>
+            <figure>
+              <img class="imagen-proyecto" src="imagenes/proyecto-redisenoweb.jpg" width="960" height="300" alt="Bocetos de interfaz y wireframes del rediseño del portal web institucional">
+              <figcaption>Proceso de diseño: wireframes y prototipo interactivo para celular y escritorio.</figcaption>
+            </figure>
+            <h2>Descripción completa del proyecto</h2>
+            <p>Rediseño conceptual y visual del portal web institucional para facilitar la consulta de trámites estudiantiles, el catálogo de asignaturas y los avisos de la comunidad.</p>
+            <p>La propuesta contempla investigación con usuarios, arquitectura de información, wireframes y un prototipo navegable para escritorio y celular.</p>
+            <h3>Requerimientos y entregables</h3>
+            <ul class="lista">
+              <li>Kit de interfaz en Figma con colores, tipografías y botones.</li>
+              <li>Prototipo con las pantallas principales conectadas.</li>
+              <li>Distribución adaptable para pantallas móviles y de escritorio.</li>
+              <li>Revisión de contraste y navegación accesible.</li>
+            </ul>
+            <div class="etiquetas">
+              <span class="etiqueta">Figma</span>
+              <span class="etiqueta">Diseño Web &amp; UI</span>
+              <span class="etiqueta">Wireframes</span>
+              <span class="etiqueta">Accesibilidad</span>
+            </div>
+          </article>
+        </div>
+        <aside class="lateral">
+          <section class="tarjeta">
+            <span class="etiqueta azul">En evaluación</span>
+            <h2>Recepción de postulaciones</h2>
+            <p class="cifra">8 <small>propuestas recibidas</small>
+            </p>
+            <label for="capacidad">8 de 10 en el primer tramo</label>
+            <progress id="capacidad" value="8" max="10">8 de 10</progress>
+            <p class="franja">Costo de cierre del ejemplo: <b>10 coins</b>
+              <br>
+              <small>Saldo inicial: 650 coins</small>
+            </p>
+          </section>
+          <section class="tarjeta">
+            <h2>Propuestas destacadas</h2>
+            <div class="persona">
+              <img class="avatar" src="imagenes/avatar-sofia.jpg" alt="Foto de perfil de Sofía Valenzuela" width="44" height="44">
+              <div>
+                <b>Sofía Valenzuela</b>
+                <p class="texto-pequeno">Recomendada · $420 USD · 3 semanas</p>
+              </div>
+            </div>
+            <p>Interfaz accesible y sistema de diseño en Figma.</p>
+            <a class="boton ancho" href="detalle-propuesta.html">Ver propuesta y evaluar →</a>
+            <hr class="separador">
+            <p>Alejandro Silva · $450 USD</p>
+            <p>Camila Torres · $440 USD</p>
+            <a class="boton secundario ancho" href="propuestas.html">Ver las 8 propuestas</a>
+          </section>
+        </aside>
+      </div>
+    </main>
+    <footer class="pie-pagina">
+      <div class="pie-interior">
+        <p>WorkCoins UNI · Proyecto escolar · 2026</p>
+        <p>Datos ficticios de demostración · <a href="index.html">Volver al acceso</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

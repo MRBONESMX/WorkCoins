@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WorkCoins UNI: maqueta escolar de proyectos universitarios en HTML y CSS.">
+    <title>Mis ganancias | WorkCoins UNI</title>
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body>
+    <a class="salto" href="#contenido">Saltar al contenido</a>
+    <header class="encabezado">
+      <div class="barra">
+        <a class="marca" href="dashboard-freelancer.html" aria-label="WorkCoins, panel de freelancer">WorkCoins<span>UNI</span>
+        </a>
+        <nav class="menu" aria-label="Menú de freelancer">
+          <a href="ofertas.html">Explorar ofertas</a>
+          <a href="proyectos-freelancer.html">Mis proyectos</a>
+          <a href="coins-freelancer.html">Billetera Coins</a>
+          <a href="ganancias.html" aria-current="page">Mis ganancias</a>
+        </nav>
+        <div class="perfil">
+          <a class="etiqueta" href="coins-freelancer.html">◉ 85 iniciales</a>
+          <details>
+            <summary>
+              <img class="avatar-cabecera" src="imagenes/avatar-sofia.jpg" alt="Foto de perfil de Sofía Valenzuela" width="28" height="28">
+              <span>Sofía Valenzuela<small>Freelancer · ejemplo</small>
+              </span>
+            </summary>
+            <p>
+              <a href="dashboard-freelancer.html">Mi panel</a>
+              <br>
+              <a href="index.html">Cambiar de rol</a>
+            </p>
+          </details>
+        </div>
+      </div>
+    </header>
+    <main id="contenido" class="contenedor">
+      <p class="aviso-demo">Maqueta escolar · Personas y datos de ejemplo. Las pantallas muestran escenarios fijos; no se guardan cambios.</p>
+      <section class="presentacion">
+        <p class="mayusculas">Módulo financiero · Vista de ejemplo</p>
+        <div class="fila">
+          <div class="persona">
+            <img class="avatar avatar-grande" src="imagenes/avatar-sofia.jpg" alt="Foto de perfil de Sofía Valenzuela" width="58" height="58">
+            <div>
+              <h1>Mis ganancias — Sofía Valenzuela</h1>
+              <p class="texto-secundario">Historial de remuneraciones de proyectos académicos del prototipo.</p>
+            </div>
+          </div>
+          <a class="boton secundario" href="recursos/ganancias-ejemplo.csv" download>Descargar historial de ejemplo</a>
+        </div>
+      </section>
+      <section class="resumen" aria-label="Resumen de ganancias">
+        <article class="tarjeta">
+          <h2>Total histórico</h2>
+          <strong class="cifra">$1,050 <small>USD</small>
+          </strong>
+          <span class="etiqueta verde">Importes ficticios de referencia</span>
+        </article>
+        <article class="tarjeta">
+          <h2>Proyectos finalizados</h2>
+          <strong class="cifra">2</strong>
+          <p>Registros anteriores del ejemplo.</p>
+        </article>
+        <article class="tarjeta">
+          <h2>Proyecto en curso</h2>
+          <strong class="cifra">$420 <small>USD</small>
+          </strong>
+          <p>Importe pendiente en el escenario activo.</p>
+        </article>
+      </section>
+      <section class="tarjeta">
+        <span class="etiqueta azul">Activo · 40% de avance</span>
+        <h2>Rediseño del Portal Web Institucional</h2>
+        <p>Cliente: Carlos Mendoza · Precio de referencia: $420 USD.</p>
+        <label for="avance-ganancias">Avance del proyecto: 40%</label>
+        <progress id="avance-ganancias" value="40" max="100">40%</progress>
+        <a href="proyecto-freelancer.html">Consultar proyecto activo →</a>
+      </section>
+      <section aria-labelledby="historial">
+        <h2 id="historial">Historial de proyectos finalizados</h2>
+        <article id="biblioteca" class="tarjeta">
+          <span class="etiqueta verde">Finalizado · Registro ficticio</span>
+          <img class="miniatura-proyecto" src="imagenes/sistema-biblioteca.jpg" alt="Fotografía de referencia para el Sistema de Biblioteca Universitaria" width="800" height="150">
+          <div class="fila">
+            <h3>Diseño de Interfaz para Sistema de Biblioteca Universitaria</h3>
+            <b>+$650 USD</b>
+          </div>
+          <p>Facultad de Humanidades · Fecha de referencia: 10 febrero 2026.</p>
+          <a class="boton secundario" href="recursos/ganancia-biblioteca.txt" download>Descargar registro de ejemplo</a>
+        </article>
+        <article id="identidad" class="tarjeta">
+          <span class="etiqueta verde">Finalizado · Registro ficticio</span>
+          <img class="miniatura-proyecto" src="imagenes/manual-identidad.jpg" alt="Fotografía de referencia para el Manual de Identidad Digital" width="800" height="150">
+          <div class="fila">
+            <h3>Manual de Identidad Digital y Componentes Web</h3>
+            <b>+$400 USD</b>
+          </div>
+          <p>Departamento de Posgrado · Fecha de referencia: 28 enero 2026.</p>
+          <a class="boton secundario" href="recursos/ganancia-identidad.txt" download>Descargar registro de ejemplo</a>
+        </article>
+      </section>
+      <p class="aviso">Los registros y las descargas son ejemplos escolares. No acreditan pagos ni están conectados a una cuenta bancaria. El CSV contiene únicamente los dos registros anteriores, cuya suma es $1,050 USD.</p>
+    </main>
+    <footer class="pie-pagina">
+      <div class="pie-interior">
+        <p>WorkCoins UNI · Proyecto escolar · 2026</p>
+        <p>Datos ficticios de demostración · <a href="index.html">Volver al acceso</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

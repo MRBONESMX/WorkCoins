@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="300" viewBox="0 0 960 300">
+  <rect width="960" height="300" fill="#eef2ff"/>
+  <rect x="340" y="34" width="280" height="150" rx="6" fill="#fff" stroke="#b9c6de" stroke-width="3"/>
+  <rect x="357" y="50" width="246" height="20" fill="#ff7a0d"/>
+  <rect x="357" y="84" width="70" height="84" fill="#e4eaf7"/>
+  <rect x="440" y="84" width="163" height="13" fill="#e4eaf7"/>
+  <rect x="440" y="108" width="163" height="13" fill="#e4eaf7"/>
+  <rect x="440" y="132" width="110" height="13" fill="#e4eaf7"/>
+  <path d="M480 184v18m-48 0h96" stroke="#b9c6de" stroke-width="4"/>
+  <text x="480" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#465166">Proyecto de rediseño web</text>
+  <text x="480" y="272" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#636d7f">Espacio de imagen: recurso original de Figma no exportado</text>
+</svg>

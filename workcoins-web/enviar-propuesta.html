@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WorkCoins UNI: maqueta escolar de proyectos universitarios en HTML y CSS.">
+    <title>Enviar propuesta técnica | WorkCoins UNI</title>
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body>
+    <a class="salto" href="#contenido">Saltar al contenido</a>
+    <header class="encabezado">
+      <div class="barra">
+        <a class="marca" href="dashboard-freelancer.html" aria-label="WorkCoins, panel de freelancer">WorkCoins<span>UNI</span>
+        </a>
+        <nav class="menu" aria-label="Menú de freelancer">
+          <a href="ofertas.html" aria-current="page">Explorar ofertas</a>
+          <a href="proyectos-freelancer.html">Mis proyectos</a>
+          <a href="coins-freelancer.html">Billetera Coins</a>
+          <a href="ganancias.html">Mis ganancias</a>
+        </nav>
+        <div class="perfil">
+          <a class="etiqueta" href="coins-freelancer.html">◉ 85 iniciales</a>
+          <details>
+            <summary>
+              <img class="avatar-cabecera" src="imagenes/avatar-sofia.jpg" alt="Foto de perfil de Sofía Valenzuela" width="28" height="28">
+              <span>Sofía Valenzuela<small>Freelancer · ejemplo</small>
+              </span>
+            </summary>
+            <p>
+              <a href="dashboard-freelancer.html">Mi panel</a>
+              <br>
+              <a href="index.html">Cambiar de rol</a>
+            </p>
+          </details>
+        </div>
+      </div>
+    </header>
+    <main id="contenido" class="contenedor">
+      <p class="aviso-demo">Maqueta escolar · Personas y datos de ejemplo. Las pantallas muestran escenarios fijos; no se guardan cambios.</p>
+      <p class="ruta">
+        <a href="ofertas.html">Explorar ofertas</a> / <a href="oferta-freelancer.html">Detalle de oferta</a> / Propuesta</p>
+      <div class="columnas">
+        <section class="principal tarjeta">
+          <span class="etiqueta azul">Convocatoria académica · OFERTA-2026-01</span>
+          <h1>Enviar propuesta técnica</h1>
+          <p>Rediseño del Portal Web Institucional · Cliente: Carlos Mendoza</p>
+          <p class="aviso">Práctica de formulario. La siguiente pantalla es un ejemplo fijo con $420 USD y 3 semanas. Tus cambios y archivos no se envían ni se conservan.</p>
+          <form class="formulario" action="confirmacion-propuesta.html" method="get">
+            <div class="campo">
+              <label for="monto">Monto que cobrarías (USD)</label>
+              <input id="monto" type="number" min="1" step="1" value="420" required>
+              <small>Presupuesto de referencia del cliente: $450 USD.</small>
+            </div>
+            <div class="campo">
+              <label for="entrega">Plazo estimado de entrega</label>
+              <select id="entrega">
+                <option>1 semana</option>
+                <option>2 semanas</option>
+                <option selected>3 semanas</option>
+                <option>4 semanas</option>
+              </select>
+            </div>
+            <div class="campo">
+              <label for="enfoque">Descripción y enfoque metodológico</label>
+              <textarea id="enfoque" rows="7" minlength="30" maxlength="1500" required>Propongo integrar investigación de usuarios, arquitectura de información, wireframes y prototipo navegable en Figma con pautas de accesibilidad. La entrega incluirá archivos de diseño y una revisión con el cliente.</textarea>
+            </div>
+            <div class="campo">
+              <label for="portafolio">Muestra de portafolio (opcional)</label>
+              <input id="portafolio" type="file" accept=".pdf,.png,.jpg,.jpeg,.fig">
+              <small>Selección local de práctica. El archivo no se sube a un servidor.</small>
+            </div>
+            <div class="campo">
+              <label for="enlace">Enlace a Figma o portafolio (opcional)</label>
+              <input id="enlace" type="url" placeholder="https://ejemplo.com/portafolio">
+            </div>
+            <label class="casilla">
+              <input type="checkbox" required> Entiendo que continuar solo abre la confirmación de ejemplo.</label>
+            <div class="acciones">
+              <a class="boton secundario" href="oferta-freelancer.html">Cancelar</a>
+              <button class="secundario" type="reset">Restablecer</button>
+              <button type="submit">Ver confirmación de ejemplo →</button>
+            </div>
+          </form>
+        </section>
+        <aside class="lateral">
+          <section class="tarjeta">
+            <p class="mayusculas">Verificación de coins</p>
+            <h2>Resumen de la postulación</h2>
+            <p>Propuestas recibidas: <b>8</b>
+            </p>
+            <p>Tramo 1: <b>1 a 10</b>
+            </p>
+            <div class="franja">
+              <p>Saldo inicial: <b>85 coins</b>
+              </p>
+              <p>Costo de postulación: <b>−10 coins</b>
+              </p>
+              <hr class="separador">
+              <p>Saldo proyectado: <b>75 coins</b>
+              </p>
+            </div>
+            <p class="texto-pequeno texto-secundario">La próxima propuesta sería la número 9 y conserva este tramo.</p>
+          </section>
+          <section class="tarjeta">
+            <h2>¿Necesitas consultar los paquetes?</h2>
+            <p>La billetera muestra las opciones del prototipo sin realizar compras.</p>
+            <a href="coins-freelancer.html">Ver billetera Coins →</a>
+          </section>
+        </aside>
+      </div>
+    </main>
+    <footer class="pie-pagina">
+      <div class="pie-interior">
+        <p>WorkCoins UNI · Proyecto escolar · 2026</p>
+        <p>Datos ficticios de demostración · <a href="index.html">Volver al acceso</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
